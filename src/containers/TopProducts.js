@@ -18,10 +18,6 @@ function TopProducts() {
     }
   }, [brand]);
 
-  // Used to see when products list is changed
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
 
   const getProducts = (brandSearch) => {
     let url = "https://product-fetch-toolstop.herokuapp.com/top40";
@@ -30,7 +26,6 @@ function TopProducts() {
       url = `https://product-fetch-toolstop.herokuapp.com/top40/${brandSearch}`
     }
 
-    console.log("fetching...");
     fetch(url)
       .then(res => res.json())
       .then(res => {

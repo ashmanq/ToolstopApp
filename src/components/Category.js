@@ -2,6 +2,14 @@ import React from 'react';
 
 function Category(props) {
 
+  if(!props.products.length) return (
+    <div className="spinner">
+      <div className="bounce1"></div>
+      <div className="bounce2"></div>
+      <div className="bounce3"></div>
+      </div>
+    );
+
   const products = props.products.map((product) => {
 
     const priceIncVat = (product.price * 1.2).toFixed(2);

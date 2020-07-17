@@ -1,9 +1,12 @@
 import React from 'react';
+import FooterMenus from '../components/FooterMenus.js';
 
 function Footer() {
 
   return (
-    <h1> This is the footer container </h1>
+    <footer>
+      <FooterMenus />
+    </footer>
   )
 }
 
