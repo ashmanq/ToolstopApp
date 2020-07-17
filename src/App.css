@@ -125,6 +125,80 @@ h1 {
   text-decoration: inherit;
 }
 
+.helper-bar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color:#1f397f;
+  font-weight:600;
+  background-color: #f0f2f7;
+}
+
+.helper-bar-tel-no {
+}
+
+.helper-bar-quicklinks {
+  text-decoration: none;
+  list-style:none;
+}
+
+.helper-bar-quicklinks li {
+    display: inline;
+    padding:10px;
+}
+
+.logo-bar {
+  display:flex;
+}
+
+.logo-bar-item {
+  /* flex-grow: 1; */
+  width:33%;
+  padding:20px;
+}
+
+.search {
+  width:100%;
+  font-size: 1.2em;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #8592b3;
+  border-style: solid;
+  padding:19px;
+  color: #666;
+}
+
+.search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #20397f;
+  font-weight: bold;
+  opacity: 1; /* Firefox */
+}
+
+.navuser {
+  /* flex-grow: 1; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navuser-item {
+  padding:0 10px 0 10px;;
+}
+
+.nav-bar {
+  text-decoration: none;
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1f397f;
+  color: white;
+  padding: 10px;
+}
+
+.nav-bar li {
+  display: inline;
+  padding:15px;
+  font-weight: bold;
+}
 @media(max-width: 1000px) {
   /* 4 items per line */
 }
