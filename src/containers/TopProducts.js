@@ -39,12 +39,18 @@ function TopProducts() {
   }
 
   // if(!products) return "waiting...";
+  let pageRender;
+
+  if(brand != null) {
+    pageRender = <Category onSelect = { handleBrandSelect } products = { products }/>
+  } else {
+    pageRender = <Banners onSelect = { handleBrandSelect }/>;
+  }
 
   return (
     <div>
       <h2>Top 40</h2>
-      <Banners onSelect = { handleBrandSelect }/>
-      <Category onSelect = { handleBrandSelect } products = { products }/>
+      {pageRender}
     </div>
 
   )
