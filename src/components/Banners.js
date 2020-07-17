@@ -9,6 +9,7 @@ function Banners(props) {
 
   return (
     <>
+      <h1>Top 40</h1>
       <div className="banners">
         <img className="top-40-banner" onClick={() => {handleSelect("all")}} src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="Top 40 products" />
         <img className="top-20-banner" onClick={() => {handleSelect("makita")}} src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-20-logos-makita-1.png?imwidth=300" alt="Makita Top 20" />

@@ -38,7 +38,8 @@ function TopProducts() {
       });
   }
 
-  // if(!products) return "waiting...";
+  // The code for pageRender created conditional page rendering depending on whether
+  // a category has been selected, or not.
   let pageRender;
 
   if(brand != null) {
@@ -48,8 +49,7 @@ function TopProducts() {
   }
 
   return (
-    <div>
-      <h2>Top 40</h2>
+    <div className="product-section">
       {pageRender}
     </div>
 
