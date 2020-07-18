@@ -210,7 +210,7 @@ h1 {
   list-style:none;
   display: flex;
   justify-content: center;
-  /* padding: 10px; */
+  background-color: white;
 }
 
 .info-bar-item {
@@ -317,7 +317,7 @@ h1 {
   }
 
   .footer-column {
-    width:30%;
+    width:40%;
   }
 
 }
@@ -334,7 +334,8 @@ h1 {
   }
 
   .logo-bar-item {
-    width:70%;
+    width:80%;
+    text-align: center;
   }
 
   .navuser {
@@ -348,16 +349,16 @@ h1 {
   .info-bar {
     display: none;
   }
+
+  .helper-bar {
+    display: none;
+  }
 }
 
 @media (max-width:650px) {
   /* 2 items per line */
   .product {
     width:44%;
-  }
-
-  .helper-bar {
-    display: none;
   }
 
   .footer-column {
